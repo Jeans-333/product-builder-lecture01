@@ -1,5 +1,25 @@
 // Add JS here
 
+// Formspree contact form
+const form = document.getElementById('contact-form');
+const successMsg = document.getElementById('form-success');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const res = await fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { Accept: 'application/json' },
+  });
+  if (res.ok) {
+    form.reset();
+    form.style.display = 'none';
+    successMsg.style.display = 'block';
+  }
+});
+
+// Theme toggle
 const toggle = document.getElementById('theme-toggle');
 
 // Apply saved theme or default to light
