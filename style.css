@@ -135,3 +135,24 @@ body.dark .submit-btn {
   font-size: 0.95rem;
   color: #4caf50;
 }
+
+/* Disqus section */
+.disqus-section {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding: 32px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+body.light .disqus-section {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+body.dark .disqus-section {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
