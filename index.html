@@ -1,52 +1,168 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='style.css' rel='stylesheet'>
-  <meta name="google-adsense-account" content="ca-pub-3166982533943854">
+  <title>ProductBuilder — 디지털 제품을 만들고 성장시키는 실전 인사이트</title>
+  <meta name="description" content="아이디어 검증부터 MVP 출시, 수익화까지 — 창업가와 개발자를 위한 실전 디지털 제품 빌딩 가이드입니다." />
+  <meta name="keywords" content="MVP, 노코드, 스타트업, 수익화, 디지털 제품, 제품 개발, 랜딩페이지" />
+  <meta property="og:title" content="ProductBuilder — 디지털 제품을 만들고 성장시키는 실전 인사이트" />
+  <meta property="og:description" content="아이디어 검증부터 MVP 출시, 수익화까지 — 창업가와 개발자를 위한 실전 가이드." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://jeans-333.github.io/product-builder-lecture01/" />
+  <link href="style.css" rel="stylesheet" />
+  <meta name="google-adsense-account" content="ca-pub-3166982533943854" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3166982533943854"
        crossorigin="anonymous"></script>
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <button id="theme-toggle">🌙 Dark Mode</button>
+<body class="light">
 
-  <section class="contact-section">
-    <h2>제휴 문의</h2>
-    <form id="contact-form" action="https://formspree.io/f/xpqjnqaj" method="POST">
-      <div class="form-group">
-        <label for="name">이름 / 회사명</label>
-        <input type="text" id="name" name="name" placeholder="홍길동 / (주)회사명" required />
-      </div>
-      <div class="form-group">
-        <label for="email">이메일</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required />
-      </div>
-      <div class="form-group">
-        <label for="message">문의 내용</label>
-        <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 자유롭게 작성해 주세요." required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">문의 보내기</button>
-    </form>
-    <p id="form-success" class="form-success" style="display:none;">✅ 문의가 접수되었습니다. 빠르게 연락드리겠습니다!</p>
-  </section>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ProductBuilder</a>
+      <nav class="main-nav" aria-label="주 메뉴">
+        <a href="index.html" class="active">홈</a>
+        <a href="about.html">소개</a>
+        <a href="#contact">문의</a>
+        <a href="privacy.html">개인정보처리방침</a>
+      </nav>
+      <button id="theme-toggle" aria-label="테마 전환">🌙</button>
+    </div>
+  </header>
 
-  <script defer type="text/javascript" src="main.js"></script>
+  <main>
 
-  <section class="disqus-section">
-    <div id="disqus_thread"></div>
-    <script>
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://productbuilder-oub2lac8je.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>디지털 제품을 만드는<br>모든 사람을 위한 실전 가이드</h1>
+        <p class="hero-sub">아이디어 검증부터 MVP 출시, 수익화까지 — 제품 빌더에게 필요한 인사이트를 제공합니다.</p>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles-section">
+      <div class="container">
+        <h2 class="section-title">최신 아티클</h2>
+        <div class="articles-grid">
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="tag">MVP</span>
+              <time datetime="2024-11-20">2024년 11월 20일</time>
+            </div>
+            <h2>MVP를 2주 만에 출시하는 방법</h2>
+            <p class="article-excerpt">많은 창업가들이 제품을 완벽하게 만들려다 시장 진입 타이밍을 놓칩니다. 하지만 실제 시장에서 배우는 것이 훨씬 중요합니다.</p>
+            <div class="article-body">
+              <h3>1단계: 핵심 문제 하나에만 집중하기</h3>
+              <p>MVP(Minimum Viable Product)의 핵심은 "최소"입니다. 처음부터 모든 기능을 넣으려 하면 절대 출시할 수 없습니다. 당신의 제품이 해결해야 할 단 하나의 핵심 문제를 정의하세요. 사용자 인터뷰를 최소 10명 이상 진행하고, 가장 자주 반복되는 불편함에 집중하세요. 인터뷰 과정에서 "이 문제를 해결하는 데 돈을 낼 의향이 있나요?"라는 질문 하나가 아이디어의 생사를 가릅니다.</p>
+              <h3>2단계: 노코드 도구로 빠르게 프로토타입 만들기</h3>
+              <p>개발자가 아니더라도 괜찮습니다. Bubble, Webflow, Notion 기반 제품 등 노코드 도구를 활용하면 1~2주 안에 실제로 사용할 수 있는 프로토타입을 만들 수 있습니다. 완벽한 코드보다 빠른 검증이 훨씬 더 가치 있습니다. 프로토타입의 목적은 제품을 완성하는 것이 아니라 핵심 가설을 테스트하는 것임을 항상 기억하세요.</p>
+              <h3>3단계: 초기 사용자 10명 확보하기</h3>
+              <p>SNS 광고보다 직접 연락이 훨씬 효과적입니다. 커뮤니티, 지인 네트워크, LinkedIn을 통해 타깃 사용자에게 직접 DM을 보내세요. "무료로 써보실 분"보다 "이 문제를 겪고 계신가요?"라는 메시지가 훨씬 높은 응답률을 보입니다. 첫 10명의 피드백이 다음 스프린트의 방향을 결정합니다. 이 단계에서 얻는 정성적 피드백이 수백 명의 설문보다 훨씬 가치 있습니다.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="tag">수익화</span>
+              <time datetime="2024-11-15">2024년 11월 15일</time>
+            </div>
+            <h2>디지털 제품 수익화 5가지 모델</h2>
+            <p class="article-excerpt">제품을 만들었다면 이제 수익을 만들어야 합니다. 광고, 구독, 제휴 등 상황에 맞는 모델을 선택하는 기준을 알아봅니다.</p>
+            <div class="article-body">
+              <h3>광고 수익 모델</h3>
+              <p>Google AdSense와 같은 광고 네트워크를 활용하는 모델입니다. 콘텐츠 중심 사이트에 적합하며, 월 1만 방문자 이상이어야 의미 있는 수익이 됩니다. 콘텐츠 품질을 유지하면서 광고를 자연스럽게 배치하는 것이 핵심입니다. 처음에는 수익보다 콘텐츠 품질 향상에 집중하세요.</p>
+              <h3>구독 모델 (SaaS)</h3>
+              <p>월/연 정액으로 서비스를 제공하는 모델입니다. 예측 가능한 매출과 높은 고객 생애 가치(LTV)가 장점입니다. 초기에는 무료 티어를 제공해 사용자를 확보하고, 핵심 기능에 유료 전환을 유도하는 Freemium 전략이 효과적입니다. 구독 모델은 이탈률(Churn Rate) 관리가 장기 성공의 핵심입니다.</p>
+              <h3>제휴 마케팅</h3>
+              <p>타 서비스나 제품을 소개하고 커미션을 받는 모델입니다. 이미 구축된 신뢰 기반의 커뮤니티나 블로그가 있다면 빠르게 수익화할 수 있습니다. 직접 사용해본 제품만 추천해야 독자의 신뢰를 유지할 수 있습니다. 단기 수익보다 독자와의 신뢰 관계를 우선시해야 지속 가능한 수익이 만들어집니다.</p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="tag">랜딩페이지</span>
+              <time datetime="2024-11-10">2024년 11월 10일</time>
+            </div>
+            <h2>전환율 높이는 랜딩페이지 핵심 요소</h2>
+            <p class="article-excerpt">방문자가 고객으로 전환되지 않는다면 아무리 트래픽이 많아도 소용없습니다. 검증된 원칙으로 전환율을 높이는 방법을 알아봅니다.</p>
+            <div class="article-body">
+              <h3>명확한 가치 제안 (Value Proposition)</h3>
+              <p>방문자는 3초 안에 "이 사이트가 나에게 무슨 도움이 되는가"를 판단합니다. 히어로 섹션의 헤드라인은 혜택 중심으로 작성해야 합니다. "빠른 MVP 개발 도구"보다 "2주 만에 아이디어를 제품으로 만드세요"가 더 효과적입니다. 방문자의 언어로 방문자의 문제를 이야기하세요.</p>
+              <h3>사회적 증거 (Social Proof)</h3>
+              <p>사용자 후기, 사용 건수, 추천사는 신뢰를 형성하는 핵심 요소입니다. "1,000명의 창업가가 신뢰합니다" 같은 수치는 방문자의 전환 결정을 돕습니다. 초기에는 베타 테스터의 솔직한 피드백을 활용하세요. 구체적인 결과를 담은 후기("2주 만에 첫 유료 고객을 확보했습니다")가 막연한 칭찬보다 훨씬 효과적입니다.</p>
+              <h3>단일 CTA (Call to Action)</h3>
+              <p>페이지의 목표는 하나여야 합니다. 회원가입, 구매, 문의 중 하나에만 집중하고 나머지는 보조 역할로 배치하세요. CTA 버튼은 색상, 크기, 문구 모두 명확하게 만들어야 합니다. "시작하기"보다 "무료로 2주 체험 시작"처럼 구체적이고 혜택이 담긴 문구가 전환율을 높입니다.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Summary -->
+    <section class="about-summary">
+      <div class="container">
+        <h2>ProductBuilder에 대해</h2>
+        <p>ProductBuilder는 디지털 제품을 만들고 성장시키려는 창업가, 개발자, 마케터를 위한 실전 인사이트 플랫폼입니다. MVP 전략, 수익화 모델, 마케팅 기법 등 실제 사례를 바탕으로 한 콘텐츠를 제공합니다.</p>
+        <a href="about.html" class="btn-outline">더 알아보기 →</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2>제휴 문의</h2>
+        <form id="contact-form" action="https://formspree.io/f/xpqjnqaj" method="POST">
+          <div class="form-group">
+            <label for="name">이름 / 회사명</label>
+            <input type="text" id="name" name="name" placeholder="홍길동 / (주)회사명" required />
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">문의 내용</label>
+            <textarea id="message" name="message" rows="5" placeholder="제휴 내용을 자유롭게 작성해 주세요." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">문의 보내기</button>
+        </form>
+        <p id="form-success" class="form-success" style="display:none;">문의가 접수되었습니다. 빠르게 연락드리겠습니다!</p>
+      </div>
+    </section>
+
+    <!-- Disqus Comments -->
+    <section class="disqus-section">
+      <div class="container">
+        <h2 class="section-title">댓글</h2>
+        <div id="disqus_thread"></div>
+        <script>
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://productbuilder-oub2lac8je.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>댓글을 보려면 JavaScript를 활성화해 주세요. <a href="https://disqus.com/?ref_noscript">Disqus 댓글 서비스</a></noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2024 ProductBuilder. All rights reserved.</p>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <a href="about.html">소개</a>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script defer src="main.js"></script>
 </body>
 </html>
